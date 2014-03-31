@@ -527,11 +527,11 @@ function enableDiagramAnimations() {
       this.blocks.forEach(function(block, index) {
         block.fadeOut = new Animation(block, [
           { opacity: 0.3 }
-        ], { duration: 0.3, ease: 'ease-in-out' });
+        ], { duration: 0.3, ease: 'ease-in-out', fill: 'both' });
         
         block.fadeIn = new Animation(block, [
           { opacity: 1 }
-        ], { duration: 0.3, ease: 'ease-in-out' });
+        ], { duration: 0.3, ease: 'ease-in-out', fill: 'both' });
       });
     },
     animateIn: function() {
@@ -540,7 +540,7 @@ function enableDiagramAnimations() {
         group.append(new Animation(block, [
           { opacity: 0, transform: 'translate3d(0, -600px, 0)' },
           { opacity: 1, transform: 'translate3d(0, 0, 0)' }
-        ], { duration: 1, delay: 0.3 * index, easing: 'ease-in-out' }));
+        ], { duration: 1, delay: 0.3 * index, easing: 'ease-in-out', fill: 'both' }));
       });
       document.timeline.play(group);
     },
