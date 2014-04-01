@@ -535,7 +535,7 @@ function enableDiagramAnimations() {
       });
     },
     animateIn: function() {
-      var group = new ParGroup();
+      var group = new AnimationGroup();
       this.blocks.forEach(function(block, index) {
         group.append(new Animation(block, [
           { opacity: 0, transform: 'translate3d(0, -600px, 0)' },
@@ -545,34 +545,36 @@ function enableDiagramAnimations() {
       document.timeline.play(group);
     },
     explode: function() {
-      var group = new ParGroup();
+      var group = new AnimationGroup();
       this.blocks.forEach(function(block, index) {
         var posY1 = 5 + (index * 10);
         var posY2 = 70 - (index * 70);
         group.append(new Animation(block, [
           { offset: 0.4, transform: 'translate3d(0, ' + posY1 + 'px' + ', 0)' },
           { offset: 1, transform: 'translate3d(0, ' + posY2 + 'px' + ', 0)' }
-        ], { duration: 0.5, easing: 'ease-in-out' }));
+        ], { duration: 0.5, easing: 'ease-in-out', fill: 'both' }));
       });
       document.timeline.play(group);
       setTimeout(this.idle.bind(this), 400);
     },
     idle: function() {
-      var group = new ParGroup();
+      var group = new AnimationGroup();
       this.blocks.forEach(function(block, index) {
         var posY = (70 - (index * 70)) - 20;
         group.append(new Animation(block, [
           { transform: 'translate3d(0, ' + posY + 'px' + ', 0)' }
         ], {
-            direction: 'alternate', duration: 1,
+            direction: 'alternate',
+            duration: 1,
             delay: index == 3 ? 0 : 0.3 * index,
-            iterations: Infinity, easing: 'ease-in-out'
+            iterations: Infinity,
+            easing: 'ease-in-out'
         }));
       });
       document.timeline.play(group);
     },
     contract: function() {
-      var group = new ParGroup();
+      var group = new AnimationGroup();
       this.blocks.forEach(function(block, index) {
         group.append(new Animation(block, [
           { opacity: 1, transform: 'translate3d(0, 0, 0)' }
@@ -611,7 +613,7 @@ function enableDiagramAnimations() {
       });
 
       if (fades.length) {
-        document.timeline.play(new SeqGroup(fades));
+        document.timeline.play(new AnimationSequence(fades));
       }
     },
     platformShrink: function() {
@@ -632,7 +634,7 @@ function enableDiagramAnimations() {
 
       animations.unshift(animationShrink);
       animations.push(animationBottom);
-      document.timeline.play(new ParGroup(animations));
+      document.timeline.play(new AnimationGroup(animations));
     },
   };
 }
