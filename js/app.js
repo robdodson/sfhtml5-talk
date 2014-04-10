@@ -317,7 +317,7 @@ function initDemos() {
       if (flexing) {
         flexDiv.removeAttribute('flex');
       } else {
-        flexDiv.setAttribute('flex');
+        flexDiv.setAttribute('flex', true);
       }
       e.target.classList.toggle('inactive');
     });
@@ -620,17 +620,17 @@ function enableDiagramAnimations() {
       var animationShrink = new Animation(this.platform3d, [
           { opacity: 1, transform: 'scale3d(1, 1, 1)' },
           { opacity: 0, transform: 'scale3d(0, 0, 0)' }
-        ], { duration: 1, easing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)' });
+        ], { duration: 1, easing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)', fill: 'both' });
 
       var animations = [this.polymer3d, this.elements3d].map(function(el) {
         return new Animation(el, [
             { transform: 'translate3d(0, 90px, 0)' }
-          ], { duration: 1, easing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)' });
+          ], { duration: 1, easing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)', fill: 'both' });
       });
 
       var animationBottom = new Animation(this.native3d, [
           { transform: 'translate3d(0, -20px, 0)' }
-        ], { duration: 1, easing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)' });
+        ], { duration: 1, easing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)', fill: 'both' });
 
       animations.unshift(animationShrink);
       animations.push(animationBottom);

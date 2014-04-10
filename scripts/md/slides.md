@@ -59,6 +59,7 @@ class: large
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vleft
 
@@ -66,6 +67,7 @@ content_class: flexbox vleft
 
 ---
 
+hidden: true
 id: netscape
 #title: Understand where we came from
 class: nobackdrop nobackground
@@ -116,6 +118,7 @@ body_class: netscape
 
 ---
 
+hidden: true
 content_class: flexbox vcenter
 
 <h2>Elements are the building blocks of the web</h2>
@@ -123,6 +126,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -130,6 +134,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -149,6 +154,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -156,6 +162,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -177,6 +184,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -223,6 +231,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -230,6 +239,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -256,6 +266,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -271,6 +282,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -278,6 +290,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -287,6 +300,7 @@ var foo = mySelect.selectedIndex;
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vleft
 
@@ -300,6 +314,15 @@ content_class: flexbox vleft
 
 ---
 
+hidden: true
+class: nobackdrop nobackground yum
+content_class: flexbox vcenter centered
+
+<img src="images/screenshots/tabs3.png" style="height:180px;">
+
+---
+
+hidden: true
 id: tab-examples
 title: Building a tab component today
 
@@ -320,15 +343,16 @@ title: Building a tab component today
 
 ---
 
+hidden: true
 class: large
 content_class: flexbox vcenter
 
 <pre class="nohighlight" style="margin-top: -50px;">
-&lt;x-tabs&gt;
-  &lt;x-tab&gt;Tab 1&lt;/x-tab&gt;
-  &lt;x-tab&gt;Tab 2&lt;/x-tab&gt;
-  &lt;x-tab&gt;Tab 3&lt;/x-tab&gt;
-&lt;/x-tabs&gt;
+&lt;tabs&gt;
+  &lt;tab&gt;Tab 1&lt;/tab&gt;
+  &lt;tab&gt;Tab 2&lt;/tab&gt;
+  &lt;tab&gt;Tab 3&lt;/tab&gt;
+&lt;/tabs&gt;
 </pre>
 
 <aside class="note">
@@ -409,7 +433,7 @@ content_class: flexbox vcenter centered
 
 content_class: flexbox vleft
 
-<h2 style="font-size: 60px; line-height: 1.25;">Polymer is a library that uses the latest <strong>web technologies</strong> to let you create <strong>custom HTML elements</strong>.</h2>
+<h2 style="font-size: 60px; line-height: 1.25;">Polymer <strong>enables</strong> the use of Web Components</strong> in all <strong>modern browsers</strong>.</h2>
 
 <!-- font-size: 42px; width: 52%; line-height: 1.3; -->
 
@@ -494,6 +518,7 @@ class: large
 
 ---
 
+hidden: true
 content_class: flexbox vcenter
 
 <h2>Three ways to work with Polymer</h2>
@@ -507,13 +532,7 @@ content_class: flexbox vcenter
 
 ---
 
-body_class: core-fill
-content_class: flexbox vcenter
-
-<h2 class="faded"><em>Creating</em> elements</h2>
-
----
-
+hidden: true
 body_class: platform-fill
 content_class: flexbox vcenter
 
@@ -521,6 +540,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 id: using-elements
 title: Using <label class="elements">elements</label>
 subtitle: <a href="http://www.polymer-project.org/docs/elements/" class="nounderline">polymer-project.org/docs/elements/</a>
@@ -536,6 +556,7 @@ keep_content: true
 
 ---
 
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -568,13 +589,13 @@ subtitle: visual elements
 
 `<polymer-ui-overlay>`
 
-`<polymer-ui-card>` [demo](http://www.polymer-project.org/components/polymer-ui-card/smoke.html)
+`<polymer-ui-card>` [demo](http://www.polymer-project.org/components/polymer-ui-card/demo.html)
 
-`<polymer-ui-sidebar-menu>` [demo](http://www.polymer-project.org/components/polymer-ui-sidebar-menu/smoke.html)
+`<polymer-ui-sidebar-menu>` [demo](http://www.polymer-project.org/components/polymer-ui-sidebar-menu/demo.html)
 
-`<polymer-ui-tabs>` [demo](http://www.polymer-project.org/components/polymer-ui-tabs/smoke.html)
+`<polymer-ui-tabs>` [demo](http://www.polymer-project.org/components/polymer-ui-tabs/demo.html)
 
-`<polymer-ui-toggle-button>` [demo](http://www.polymer-project.org/components/polymer-ui-toggle-button/smoke.html)
+`<polymer-ui-toggle-button>` [demo](http://www.polymer-project.org/components/polymer-ui-toggle-button/demo.html)
 
 `<polymer-ui-theme-aware>`
 
@@ -688,6 +709,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 title: Polymer elements
 subtitle: non-visual utility elements
 content_class: columns-2
@@ -739,6 +761,7 @@ content_class: columns-2
 
 ---
 
+hidden: true
 id: polymer-flex-demo
 title: Everything is an element
 subtitle: flexbox...using DOM
@@ -822,6 +845,14 @@ content_class: flexbox vcenter
 
 ---
 
+body_class: core-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>Creating</em> elements</h2>
+
+---
+
+hidden: true
 id: creating-elements
 title: Creating <label class="core">elements</label>
 subtitle: <a href="http://www.polymer-project.org/polymer.html" class="nounderline">polymer-project.org/polymer.html</a>
@@ -859,6 +890,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vcenter
 
@@ -871,6 +903,7 @@ title: Declarative registration
 #subtitle: Declarative registration
 
 <pre class="corner prettyprint">
+&lt;script src="<span alt="bower install polymer" data-tooltip="bower install polymer">platform.js</span>">&lt;/script>
 &lt;link rel="import" href="<span alt="bower install polymer" data-tooltip="bower install polymer">polymer.html</span>">
 </pre>
 
@@ -908,6 +941,7 @@ title: Declarative registration
 #subtitle: Declarative registration with prototypes
 
 <pre class="corner prettyprint">
+&lt;script src="<span alt="bower install polymer" data-tooltip="bower install polymer">platform.js</span>">&lt;/script>
 &lt;link rel="import" href="<span alt="bower install polymer" data-tooltip="bower install polymer">polymer.html</span>">
 </pre>
 
@@ -1028,6 +1062,7 @@ title: Published properties
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vcenter
 
@@ -1035,6 +1070,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 id: declarative-event-handlers
 title: Declarative Event Handlers
 
@@ -1067,6 +1103,7 @@ title: Declarative Event Handlers
 
 ---
 
+hidden: true
 body_class: core-fill
 content_class: flexbox vcenter
 
@@ -1074,6 +1111,7 @@ content_class: flexbox vcenter
 
 ---
 
+hidden: true
 id: automatic-node-finding
 title: Automatic Node Finding
 
@@ -1303,6 +1341,7 @@ subtitle: responsive design...using DOM
 
 ---
 
+hidden: true
 id: the-platform
 title: The <label class="platform">platform</label>
 subtitle: <a href="http://www.polymer-project.org/docs/start/platform.html" class="nounderline">polymer-project.org/docs/start/platform</a>
@@ -1319,6 +1358,7 @@ keep_content: true
 
 ---
 
+hidden: true
 body_class: platform-fill
 content_class: flexbox vleft
 
@@ -1326,6 +1366,7 @@ content_class: flexbox vleft
 
 ---
 
+hidden: true
 id: platform-polyfills
 title: Platform polyfills
 subtitle: supporting new web technologies today
@@ -1381,6 +1422,7 @@ class: nobackdrop nobackground browser-support
 
 ---
 
+hidden: true
 body_class: platform-fill
 content_class: flexbox vleft
 
@@ -1388,6 +1430,7 @@ content_class: flexbox vleft
 
 ---
 
+hidden: true
 id: evaporate-platform
 class: polymer-diagram
 
