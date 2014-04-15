@@ -105,7 +105,7 @@ https://code.google.com/p/io-2012-slides
  
 </slide>
 
-<slide id="agenda" class="large"   >
+<slide id="agenda" class="large"   hidden>
   
     <hgroup>
       <span>
@@ -119,11 +119,11 @@ https://code.google.com/p/io-2012-slides
     </hgroup>
     <article ><div class="topmargin">
   <div>
-    <h3>What is Polymer?</h3>
+    <h3>Web Components? Polymer?</h3>
     <br>
   </div>
   <div>
-    <h3>Working with Polymer</h3>
+    <h3>Using Web Components with Polymer</h3>
     <br>
   </div>
   <div>
@@ -530,35 +530,6 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide id="tab-examples"    hidden>
-  
-    <hgroup>
-      <span>
-        
-        
-        
-        
-      </span>
-      <h2>Building a tab component today</h2>
-      <h3></h3>
-    </hgroup>
-    <article ><div class="build flexbox vcenter centered">
-<img src="images/screenshots/tabs/jquery.png">
-<img src="images/screenshots/tabs/kendo.png">
-<img src="images/screenshots/tabs/yui.png">
-<img src="images/screenshots/tabs/angular.png">
-<img src="images/screenshots/tabs/sencha.png">
-<img src=""> <!-- intentional. holder to see all images together -->
-</div>
-
-<aside class="note">
-  <section>
-    <p><b>Now that we're seeing this JavaScript renaissance...</b></p>
-  </section>
-</aside></article>
- 
-</slide>
-
 <slide  class="large"   hidden>
   
     <hgroup>
@@ -600,6 +571,129 @@ var foo = mySelect.selectedIndex;
       <h3></h3>
     </hgroup>
     <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;">Web Components are a set of <strong>emerging standards</strong> that allow developers to <strong>extend HTML</strong>.</h2></article>
+ 
+</slide>
+
+<slide     >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2>Creating a carousel</h2>
+      <h3>The old way</h3>
+    </hgroup>
+    <article ><pre class="prettyprint" style="font-size:21px; line-height: 1.2; height: 500px; overflow-y: scroll;" data-lang="HTML">
+&lt;div id="carousel"&gt;
+  &lt;input checked="" type="radio" name="carousel" id="slide1" selected="false"&gt;
+  &lt;input type="radio" name="carousel" id="slide2" selected="false"&gt;
+  &lt;input type="radio" name="carousel" id="slide3" selected="false"&gt;
+  &lt;div id="slides"&gt;
+    &lt;div id="overflow"&gt;
+      &lt;div class="inner"&gt;
+        &lt;article&gt;
+          &lt;img src="sunset.jpg" alt="a dramatic sunset"&gt;
+        &lt;/article&gt;
+        &lt;article&gt;
+          &lt;img src="arch.jpg" alt="a rock arch"&gt;
+        &lt;/article&gt;
+        &lt;article&gt;
+          &lt;img src="hills.jpg" alt="some neat hills"&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;label for="slide1"&gt;&lt;/label&gt;
+  &lt;label for="slide2"&gt;&lt;/label&gt;
+  &lt;label for="slide3"&gt;&lt;/label&gt;
+&lt;/div&gt;
+</pre></article>
+ 
+</slide>
+
+<slide     >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2>Creating a carousel</h2>
+      <h3>The Web Components way</h3>
+    </hgroup>
+    <article ><pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+&lt;img-carousel&gt;
+  &lt;img src="sunset.jpg" alt="a dramatic sunset"&gt;
+  &lt;img src="arch.jpg" alt="a rock arch"&gt;
+  &lt;img src="hills.jpg" alt="some neat hills"&gt;
+&lt;/img-carousel&gt;
+</pre></article>
+ 
+</slide>
+
+<slide    data-body-class="elements-fill" >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><h2 class="faded"><em>Custom tags</em> + <em>Scoped styles</em> + <em>Encapsulation</em></h2></article>
+ 
+</slide>
+
+<slide     hidden>
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vleft"><h2 style="font-size: 60px; line-height: 1.25;">That's cool. <strong>Why</strong> do I care?</h2></article>
+ 
+</slide>
+
+<slide id="tab-examples"    hidden>
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2>Building UI today</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div class="build flexbox vcenter centered">
+<img src="images/screenshots/tabs/jquery.png">
+<img src="images/screenshots/tabs/kendo.png">
+<img src="images/screenshots/tabs/yui.png">
+<img src="images/screenshots/tabs/angular.png">
+<img src="images/screenshots/tabs/sencha.png">
+<img src=""> <!-- intentional. holder to see all images together -->
+</div>
+
+<aside class="note">
+  <section>
+    <p><b>Now that we're seeing this JavaScript renaissance...</b></p>
+  </section>
+</aside></article>
  
 </slide>
 
@@ -957,7 +1051,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide id="polymer-ui-collapsible-demo"    >
+<slide id="polymer-ui-collapsible-demo"    hidden>
   
     <hgroup>
       <span>
@@ -1051,7 +1145,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide     hidden>
+<slide     >
   
     <hgroup>
       <span>
@@ -1091,7 +1185,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide id="polymer-flex-demo"    hidden>
+<slide id="polymer-flex-demo"    >
   
     <hgroup>
       <span>

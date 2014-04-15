@@ -28,17 +28,18 @@ id: who
 
 ---
 
+hidden: true
 id: agenda
 title: Today's agenda
 class: large
 
 <div class="topmargin">
   <div>
-    <h3>What is Polymer?</h3>
+    <h3>Web Components? Polymer?</h3>
     <br>
   </div>
   <div>
-    <h3>Working with Polymer</h3>
+    <h3>Using Web Components with Polymer</h3>
     <br>
   </div>
   <div>
@@ -323,27 +324,6 @@ content_class: flexbox vcenter centered
 ---
 
 hidden: true
-id: tab-examples
-title: Building a tab component today
-
-<div class="build flexbox vcenter centered">
-<img src="images/screenshots/tabs/jquery.png">
-<img src="images/screenshots/tabs/kendo.png">
-<img src="images/screenshots/tabs/yui.png">
-<img src="images/screenshots/tabs/angular.png">
-<img src="images/screenshots/tabs/sencha.png">
-<img src=""> <!-- intentional. holder to see all images together -->
-</div>
-
-<aside class="note">
-  <section>
-    <p><b>Now that we're seeing this JavaScript renaissance...</b></p>
-  </section>
-</aside>
-
----
-
-hidden: true
 class: large
 content_class: flexbox vcenter
 
@@ -366,6 +346,85 @@ content_class: flexbox vcenter
 content_class: flexbox vleft
 
 <h2 style="font-size: 60px; line-height: 1.25;">Web Components are a set of <strong>emerging standards</strong> that allow developers to <strong>extend HTML</strong>.</h2>
+
+---
+
+title: Creating a carousel
+subtitle: The old way
+
+<pre class="prettyprint" style="font-size:21px; line-height: 1.2; height: 500px; overflow-y: scroll;" data-lang="HTML">
+&lt;div id="carousel"&gt;
+  &lt;input checked="" type="radio" name="carousel" id="slide1" selected="false"&gt;
+  &lt;input type="radio" name="carousel" id="slide2" selected="false"&gt;
+  &lt;input type="radio" name="carousel" id="slide3" selected="false"&gt;
+  &lt;div id="slides"&gt;
+    &lt;div id="overflow"&gt;
+      &lt;div class="inner"&gt;
+        &lt;article&gt;
+          &lt;img src="sunset.jpg" alt="a dramatic sunset"&gt;
+        &lt;/article&gt;
+        &lt;article&gt;
+          &lt;img src="arch.jpg" alt="a rock arch"&gt;
+        &lt;/article&gt;
+        &lt;article&gt;
+          &lt;img src="hills.jpg" alt="some neat hills"&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;label for="slide1"&gt;&lt;/label&gt;
+  &lt;label for="slide2"&gt;&lt;/label&gt;
+  &lt;label for="slide3"&gt;&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+
+---
+
+title: Creating a carousel
+subtitle: The Web Components way
+
+<pre class="prettyprint" style="font-size:30px; line-height: 1.2;" data-lang="HTML">
+&lt;img-carousel&gt;
+  &lt;img src="sunset.jpg" alt="a dramatic sunset"&gt;
+  &lt;img src="arch.jpg" alt="a rock arch"&gt;
+  &lt;img src="hills.jpg" alt="some neat hills"&gt;
+&lt;/img-carousel&gt;
+</pre>
+
+---
+
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded"><em>Custom tags</em> + <em>Scoped styles</em> + <em>Encapsulation</em></h2>
+
+---
+
+hidden: true
+content_class: flexbox vleft
+
+<h2 style="font-size: 60px; line-height: 1.25;">That's cool. <strong>Why</strong> do I care?</h2>
+
+---
+
+hidden: true
+id: tab-examples
+title: Building UI today
+
+<div class="build flexbox vcenter centered">
+<img src="images/screenshots/tabs/jquery.png">
+<img src="images/screenshots/tabs/kendo.png">
+<img src="images/screenshots/tabs/yui.png">
+<img src="images/screenshots/tabs/angular.png">
+<img src="images/screenshots/tabs/sencha.png">
+<img src=""> <!-- intentional. holder to see all images together -->
+</div>
+
+<aside class="note">
+  <section>
+    <p><b>Now that we're seeing this JavaScript renaissance...</b></p>
+  </section>
+</aside>
 
 ---
 
@@ -638,6 +697,7 @@ subtitle: Tabs revisited
 
 ---
 
+hidden: true
 id: polymer-ui-collapsible-demo
 title: Everything is an element
 subtitle: Collapsible elements
@@ -709,7 +769,6 @@ content_class: flexbox vcenter
 
 ---
 
-hidden: true
 title: Polymer elements
 subtitle: non-visual utility elements
 content_class: columns-2
@@ -761,7 +820,6 @@ content_class: columns-2
 
 ---
 
-hidden: true
 id: polymer-flex-demo
 title: Everything is an element
 subtitle: flexbox...using DOM
