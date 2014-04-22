@@ -86,15 +86,16 @@ SlideController.prototype.onMessage_ = function(e) {
     var evt = document.createEvent('Event');
     evt.initEvent('keydown', true, true);
     evt.keyCode = data.keyCode;
+    evt.wasPostMessage = true;
     document.dispatchEvent(evt);
   }
 };
 
 SlideController.prototype.sendMsg = function(msg) {
   // // Send message to popup window.
-  // if (this.popup) {
-  //   this.popup.postMessage(msg, ORIGIN_);
-  // }
+  if (this.popup) {
+    this.popup.postMessage(msg, ORIGIN_);
+  }
 
   // Send message to main window.
   if (this.isPopup) {
@@ -106,4 +107,3 @@ SlideController.prototype.sendMsg = function(msg) {
 window.SlideController = SlideController;
 
 })(window);
-
