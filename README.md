@@ -1,8 +1,8 @@
-# Polymer Building Blocks
+# Web Component Mashups at 3 a.m.
 
 ## Live Preview
 
-[Live slides](http://robdodson.me/polymer-austinjs) | 
+[Live slides](http://robdodson.github.io/sfhtml5-talk) | [Video](https://www.youtube.com/watch?v=75EuHl6CSTo&list=PLOU2XLYxmsILhqgUXAGpusgBMje8Qd6r-&index=8)
 
 ## Getting Started
 
