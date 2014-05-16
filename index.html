@@ -52,9 +52,8 @@ https://code.google.com/p/io-2012-slides
 <!-- <slide id="first-slide" class="nobackground"></slide>
  -->
 
+
 <slide id="title-slide" class="nobackdrop nobackground do-transition">
-  <!-- <aside class="gdbar"><img src="images/logos/webcomponents.png"></aside> -->
-  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
   <article class="auto-fadein flexbox vcenter">
     <hgroup>
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
@@ -103,7 +102,7 @@ https://code.google.com/p/io-2012-slides
  
 </slide>
 
-<slide id="agenda" class="large"   hidden>
+<slide    data-body-class="elements-fill" >
   
     <hgroup>
       <span>
@@ -112,33 +111,48 @@ https://code.google.com/p/io-2012-slides
         
         
       </span>
-      <h2>Today's agenda</h2>
+      <h2></h2>
       <h3></h3>
     </hgroup>
-    <article ><div class="topmargin">
-  <div>
-    <h3>Web Components? Polymer?</h3>
-    <br>
-  </div>
-  <div>
-    <h3>Using Web Components with Polymer</h3>
-    <br>
-  </div>
-  <div>
-    <h3>Example time</h3>
-    <br>
-  </div>
-</div>
+    <article class="flexbox vcenter"><h2 class="faded">Elements make you <em>crazy productive</em></h2></article>
+ 
+</slide>
 
-<aside class="note">
-  <section>
-    <ul>
-      <li>What is Polymer? What are Web Components?</li>
-      <li>Start working with Polymer so you can use Web Components in modern browsers</li>
-      <li>We're just gonna write some code and mess around</li>
-    </ul>
-  </section>
-</aside></article>
+<slide id="agenda"    >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vleft"><h2>Mashup #01: <strong>Street View Tour</strong></h2>
+
+<p><br>
+<h2 style="font-size: 60px; line-height: 1.35;">An application that <strong>connects to a back end service</strong>, <br>loads some data into <strong>Google Maps</strong>, <br>shows a description for the location using an <strong>X-Tag</strong>, <br>and let's you <strong>explore the space using Street View</strong>.</h2></p></article>
+ 
+</slide>
+
+<slide id="agenda"    >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vleft"><h2>Mashup #02: <strong>Map Voice Search</strong></h2>
+
+<p><br>
+<h2 style="font-size: 60px; line-height: 1.35;">An application that, uses a <strong>satellite Google Map</strong>, <br>allows you to <strong>search with keyboard or voice</strong>, <br>and let's you preview <strong>on a phone</strong>.</h2></p></article>
  
 </slide>
 
@@ -556,7 +570,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide     >
+<slide     hidden>
   
     <hgroup>
       <span>
@@ -578,7 +592,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide     >
+<slide     hidden>
   
     <hgroup>
       <span>
@@ -624,7 +638,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide     >
+<slide     hidden>
   
     <hgroup>
       <span>
@@ -652,7 +666,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide    data-body-class="elements-fill" >
+<slide    data-body-class="elements-fill" hidden>
   
     <hgroup>
       <span>
@@ -719,7 +733,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide  class="nobackdrop nobackground browser-support"   >
+<slide  class="nobackdrop nobackground browser-support"   hidden>
   
     <hgroup>
       <span>
@@ -790,7 +804,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide  class="nobackdrop nobackground yum"   >
+<slide  class="nobackdrop nobackground yum"   hidden>
   
     <hgroup>
       <span>
@@ -806,7 +820,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide     >
+<slide     hidden>
   
     <hgroup>
       <span>
@@ -832,7 +846,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide id="layers-of-polymer" class="polymer-diagram"   >
+<slide id="layers-of-polymer" class="polymer-diagram"   hidden>
   
     <hgroup>
       <span>
@@ -936,7 +950,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide    data-body-class="elements-fill" >
+<slide    data-body-class="elements-fill" hidden>
   
     <hgroup>
       <span>
@@ -1008,7 +1022,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide id="polymer-ui-elements"    >
+<slide id="polymer-ui-elements"    hidden>
   
     <hgroup>
       <span>
@@ -1048,7 +1062,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide id="polymer-ui-tabs-demo"    >
+<slide id="polymer-ui-tabs-demo"    hidden>
   
     <hgroup>
       <span>
@@ -1187,7 +1201,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide     >
+<slide     hidden>
   
     <hgroup>
       <span>
@@ -1228,7 +1242,7 @@ var foo = mySelect.selectedIndex;
  
 </slide>
 
-<slide id="polymer-flex-demo"    >
+<slide id="polymer-flex-demo"    hidden>
   
     <hgroup>
       <span>
@@ -1335,7 +1349,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide    data-body-class="core-fill" >
+<slide    data-body-class="core-fill" hidden>
   
     <hgroup>
       <span>
@@ -1426,7 +1440,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide id="declarative-registration"    >
+<slide id="declarative-registration"    hidden>
   
     <hgroup>
       <span>
@@ -1473,7 +1487,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide id="declarative-registration-proto"    >
+<slide id="declarative-registration-proto"    hidden>
   
     <hgroup>
       <span>
@@ -1520,7 +1534,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide    data-body-class="core-fill" >
+<slide    data-body-class="core-fill" hidden>
   
     <hgroup>
       <span>
@@ -1542,7 +1556,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide id="two-way-binding"    >
+<slide id="two-way-binding"    hidden>
   
     <hgroup>
       <span>
@@ -1588,7 +1602,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide    data-body-class="core-fill" >
+<slide    data-body-class="core-fill" hidden>
   
     <hgroup>
       <span>
@@ -1610,7 +1624,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide id="published-properties"    >
+<slide id="published-properties"    hidden>
   
     <hgroup>
       <span>
@@ -2153,7 +2167,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide id="polymerurl" class="nobackdrop nobackground yum do-transition"   >
+<slide id="polymerurl" class="nobackdrop nobackground yum do-transition"   hidden>
   
     <hgroup>
       <span>
@@ -2171,48 +2185,15 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
-<slide     >
-  
-    <hgroup>
-      <span>
-        
-        
-        
-        
-      </span>
-      <h2></h2>
-      <h3></h3>
-    </hgroup>
-    <article ></article>
- 
-</slide>
-
 
 <slide class="thank-you-slide segue nobackground large">
   <aside class="gdbar right"><img src="images/logos/chrome_logo.png"></aside>
   <article class="flexbox vleft auto-fadein">
     <h2>Thank You!</h2>
-    <div style="margin-bottom:5em;"><a href="http://robdodson.me/polymer-austinjs">robdodson.me/polymer-austinjs</a></div>
+    <!-- <div style="margin-bottom:5em;"><a href="http://robdodson.me/polymer-austinjs">robdodson.me/polymer-austinjs</a></div> -->
   </article>
   <p class="auto-fadein" data-config-contact></p>
 </slide>
-
-
-<!-- <slide id="finito" class="segue nobackground">
-  <article class="flexbox vcenter auto-fadein">
-    <h2>Finito.</h2>
-  </article>
-</slide> -->
-
-<!-- <slide class="logoslide dark nobackground">
-  <article class="flexbox vcenter">
-    <span><img src="images/google_developers_logo_white.png"></span>
-  </article>
-</slide> -->
-
-<slide class="backdrop"></slide>
-
-</slides>
 
 </main>
 

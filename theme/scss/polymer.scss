@@ -618,14 +618,7 @@ slides > slide {
   left: 0 !important;
   top: 0 !important;
   margin: 0 !important;
-  background: linear-gradient(-270deg,
-                rgba(#1E2235, 1),
-                rgba(#1E2235, 0.8) 50%,
-                rgba(#1E2235, 0.5) 60%
-              ),
-              url('../../images/polymer/p-elements.svg') 9% 10%,
-              url('../../images/polymer/p-elements.svg') center / 50%;
-  background-color: #161A27;
+  background-color: black;
 
   padding: $slide-top-bottom-padding * 2 $slide-left-right-padding * 2;
 
@@ -741,6 +734,7 @@ slide#whatispolymer {
 }
 
 slide#agenda,
+slide#agenda2,
 slide#philosophy {
   h2 {
     font-size: 45px !important;

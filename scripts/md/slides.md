@@ -28,35 +28,28 @@ id: who
 
 ---
 
-hidden: true
+body_class: elements-fill
+content_class: flexbox vcenter
+
+<h2 class="faded">Elements make you <em>crazy productive</em></h2>
+
+---
+
 id: agenda
-title: Today's agenda
-class: large
+content_class: flexbox vleft
 
-<div class="topmargin">
-  <div>
-    <h3>Web Components? Polymer?</h3>
-    <br>
-  </div>
-  <div>
-    <h3>Using Web Components with Polymer</h3>
-    <br>
-  </div>
-  <div>
-    <h3>Example time</h3>
-    <br>
-  </div>
-</div>
+<h2>Mashup #01: <strong>Street View Tour</strong></h2>
+<br>
+<h2 style="font-size: 60px; line-height: 1.35;">An application that <strong>connects to a back end service</strong>, <br>loads some data into <strong>Google Maps</strong>, <br>shows a description for the location using an <strong>X-Tag</strong>, <br>and let's you <strong>explore the space using Street View</strong>.</h2>
 
-<aside class="note">
-  <section>
-    <ul>
-      <li>What is Polymer? What are Web Components?</li>
-      <li>Start working with Polymer so you can use Web Components in modern browsers</li>
-      <li>We're just gonna write some code and mess around</li>
-    </ul>
-  </section>
-</aside>
+---
+
+id: agenda
+content_class: flexbox vleft
+
+<h2>Mashup #02: <strong>Map Voice Search</strong></h2>
+<br>
+<h2 style="font-size: 60px; line-height: 1.35;">An application that, uses a <strong>satellite Google Map</strong>, <br>allows you to <strong>search with keyboard or voice</strong>, <br>and let's you preview <strong>on a phone</strong>.</h2>
 
 ---
 
@@ -342,7 +335,7 @@ content_class: flexbox vcenter
 </aside>
 
 ---
-
+hidden: true
 content_class: flexbox vleft
 
 <h2 style="font-size: 60px; line-height: 1.25;">Web Components are a set of <strong>emerging standards</strong> that allow developers to <strong>extend HTML</strong>.</h2>
@@ -354,7 +347,7 @@ content_class: flexbox vleft
 </aside>
 
 ---
-
+hidden: true
 title: Creating a carousel
 subtitle: The old way
 
@@ -391,7 +384,7 @@ subtitle: The old way
 </aside>
 
 ---
-
+hidden: true
 title: Creating a carousel
 subtitle: The Web Components way
 
@@ -410,7 +403,7 @@ subtitle: The Web Components way
 </aside>
 
 ---
-
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -451,7 +444,7 @@ title: Building UI today
 </aside>
 
 ---
-
+hidden: true
 class: nobackdrop nobackground browser-support
 content_class: flexbox vcenter
 
@@ -513,14 +506,14 @@ content_class: flexbox vcenter
 </aside>
 
 ---
-
+hidden: true
 class: nobackdrop nobackground yum
 content_class: flexbox vcenter centered
 
 <img src="images/logos/lockup.svg" style="height:180px;">
 
 ---
-
+hidden: true
 content_class: flexbox vleft
 
 <h2 style="font-size: 60px; line-height: 1.25;">Polymer <strong>enables</strong> the use of Web Components</strong> in all <strong>modern browsers</strong>.</h2>
@@ -536,7 +529,7 @@ content_class: flexbox vleft
 </aside>
 
 ---
-
+hidden: true
 id: layers-of-polymer
 class: polymer-diagram
 title: Layers of Polymer
@@ -618,7 +611,7 @@ content_class: flexbox vcenter
 <h2>Three ways to work with Polymer</h2>
 
 ---
-
+hidden: true
 body_class: elements-fill
 content_class: flexbox vcenter
 
@@ -663,7 +656,7 @@ content_class: flexbox vcenter
 </aside>
 
 ---
-
+hidden: true
 id: polymer-ui-elements
 title: Polymer UI elements
 subtitle: visual elements
@@ -703,7 +696,7 @@ subtitle: visual elements
 </aside>
 
 ---
-
+hidden: true
 id: polymer-ui-tabs-demo
 title: Everything is an element
 subtitle: Tabs revisited
@@ -812,7 +805,7 @@ content_class: flexbox vcenter
 <h2>You don't have to know about their internals</h2>
 
 ---
-
+hidden: true
 title: Polymer elements
 subtitle: non-visual utility elements
 content_class: columns-2
@@ -864,7 +857,7 @@ content_class: columns-2
 </aside>
 
 ---
-
+hidden: true
 id: polymer-flex-demo
 title: Everything is an element
 subtitle: flexbox...using DOM
@@ -948,7 +941,7 @@ content_class: flexbox vcenter
 <h2>They're easy to add to your project</h2>
 
 ---
-
+hidden: true
 body_class: core-fill
 content_class: flexbox vcenter
 
@@ -1013,7 +1006,7 @@ content_class: flexbox vcenter
 </aside>
 
 ---
-
+hidden: true
 id: declarative-registration
 title: Declarative registration
 #subtitle: Declarative registration
@@ -1052,7 +1045,7 @@ title: Declarative registration
 </aside>
 
 ---
-
+hidden: true
 id: declarative-registration-proto
 title: Declarative registration
 #subtitle: Declarative registration with prototypes
@@ -1091,7 +1084,7 @@ title: Declarative registration
 </aside>
 
 ---
-
+hidden: true
 body_class: core-fill
 content_class: flexbox vcenter
 
@@ -1104,7 +1097,7 @@ content_class: flexbox vcenter
 </aside>
 
 ---
-
+hidden: true
 id: two-way-binding
 title: Binding Expressions
 
@@ -1141,7 +1134,7 @@ title: Binding Expressions
 </aside>
 
 ---
-
+hidden: true
 body_class: core-fill
 content_class: flexbox vcenter
 
@@ -1154,7 +1147,7 @@ content_class: flexbox vcenter
 </aside>
 
 ---
-
+hidden: true
 id: published-properties
 title: Published properties
 
@@ -1594,7 +1587,7 @@ class: polymer-diagram
 
 
 ---
-
+hidden: true
 id: polymerurl
 class: nobackdrop nobackground yum do-transition
 content_class: flexbox vcenter centered
@@ -1602,5 +1595,3 @@ content_class: flexbox vcenter centered
 <div class="build">
 <h2><a href="http://polymer-project.org"><span class="elements">polymer</span><span class="hide">-</span><span class="core">project</span><span class="hide">.</span><span class="platform">org</span></a></h2>
 </div>
-
----
